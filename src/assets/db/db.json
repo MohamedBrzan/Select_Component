@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1dfg23",
+    "name": "Mahmoud",
+    "age": 30,
+    "address": "123 Main St",
+    "phone": "555-555-5555"
+  },
+  {
+    "id": "2ghh",
+    "name": "Mostafa",
+    "age": 40,
+    "address": "456 Main St",
+    "phone": "666-666-1232"
+  },
+
+  {
+    "id": "3234f",
+    "name": "Ahmed",
+    "age": 80,
+    "address": "32 Main St",
+    "phone": "678-545-2323"
+  },
+  {
+    "id": "re34f",
+    "name": "Mohamed Brzan",
+    "age": 26,
+    "address": "22 Main St",
+    "phone": "111-377-2369"
+  }
+]

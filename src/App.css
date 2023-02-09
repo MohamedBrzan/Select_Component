@@ -1,0 +1,49 @@
+.App {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .selector {
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 100%;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: inset -39px 15px 77px rgba(135, 0, 255, 0.5);
+  cursor: pointer;
+}
+.App .selector:hover {
+  box-shadow: inset -39px 15px 77px ghostwhite;
+  color: bisque;
+}
+.App .selector:active {
+  box-shadow: inset -39px 15px 77px magenta;
+  color: mediumturquoise;
+}
+.App .selectors {
+  background: maroon;
+  width: 100%;
+}
+.App .selectors .item {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+}
+.App .selectors .item:hover {
+  padding: 1rem 2rem;
+  background: black;
+  color: magenta;
+}
+.App .selectors.hidden {
+  height: 0;
+  overflow: hidden;
+}/*# sourceMappingURL=App.css.map */

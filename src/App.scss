@@ -1,0 +1,63 @@
+%fixedPosition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@mixin borderAndPadding($border, $padding) {
+  border-radius: $border;
+  padding: $padding;
+}
+
+.App {
+  user-select: none;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .selector {
+    @extend fixedPosition !optional;
+    border: 2px solid purple;
+    @include borderAndPadding(10px, 0.5em);
+    width: 100%;
+    font: {
+      weight: bold;
+      size: 2rem;
+    }
+    box-shadow: inset -39px 15px 77px rgb(135 0 255 / 50%);
+    cursor: pointer;
+    &:hover {
+      box-shadow: inset -39px 15px 77px ghostwhite;
+      color: bisque;
+    }
+    &:active {
+      box-shadow: inset -39px 15px 77px magenta;
+      color: mediumturquoise;
+    }
+  }
+  .selectors {
+    background: maroon;
+    width: 100%;
+    .item {
+      padding: 1rem;
+      cursor: pointer;
+      font: {
+        weight: 200;
+        size: 2rem;
+      }
+      transition: 0.3s ease-in-out;
+      &:hover {
+        padding: 1rem 2rem;
+        background: black;
+        color: magenta;
+      }
+    }
+    &.hidden {
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
